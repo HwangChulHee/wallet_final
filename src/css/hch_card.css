@@ -1,0 +1,157 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    width: 30rem;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.check-group {
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20rem;
+}
+
+
+.logo {
+    width: 20rem; /* 이미지의 너비를 10rem으로 설정 */
+    height: auto; /* 높이를 자동으로 조절하여 원래의 가로-세로 비율을 유지합니다. */
+}
+
+
+.h-btn
+{
+  background-color: #FF7F00;
+  border-color: #FF7F00;
+  border-radius: 20px;
+  font-size: 15px;
+  color: white;
+}
+
+/* 헤더 관련 */
+.h-card-header {
+  background-color: rgb(245 245 244);
+}
+
+
+/* 니모닉 관련 css*/
+.li_div {
+    list-style-type: disc;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: left;
+    font-size:small;
+  }
+  
+  
+  .circle-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10%; /* 원 형태로 만들기 */
+    background-color: #f1f1f1; /* 배경색 설정 */
+    position: relative; /* 포지션 설정 추가 */
+  
+    /* 아래 속성은 텍스트가 원 안에서 중앙에 위치하도록 스타일 조정 */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  
+  .circle-text-item
+   {
+    font-size: small;
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray; /* 테두리 스타일 */
+    border-radius: 40%; /* 동그란 테두리로 만들기 */
+    
+    margin-inline: 20px;
+    margin-block: 15px;
+    background-color: white; /* 아이템 배경색 */
+    position: relative; /* 포지션 설정 추가 */
+  }
+  
+  .circle-text-item:active,
+  .circle-text-item:focus {
+    border: 1px solid #ff8101; /* 테두리 스타일 */
+    box-shadow: 0 0 0 2px #ffd8b0;
+  }
+  
+  .circle-text-confirm-item
+   {
+    font-size: small;
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ff8101; /* 테두리 스타일 */
+    box-shadow: 0 0 0 2px #ffd8b0;
+    border-radius: 40%; /* 동그란 테두리로 만들기 */
+    
+    margin-inline: 20px;
+    margin-block: 15px;
+    background-color: white; /* 아이템 배경색 */
+    position: relative; /* 포지션 설정 추가 */
+  }
+  
+  .circle-text-input {
+    text-align: center;
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent; /* Optional: Transparent background */
+  }
+  
+  
+  
+  .circle-text-index {
+    position: absolute;
+    top: 50%;
+    left: -20px; /* 위치 조정을 위해 값 조절 */
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: black;
+  }
+  
+  .circle-text-item.blurred {
+    filter: blur(5px); /* 블러 처리 */
+  }
+  
+  
+  .warning-text {
+    position: absolute;
+    top: 50%; /* 높이의 중앙에 배치 */
+    left: 50%; /* 가로의 중앙에 배치 */
+    transform: translate(-50%, -50%); /* 중앙 정렬을 위한 변환 */
+    color: black;
+    font-size: small;
+    text-align: center;
+    z-index: 2; /* 텍스트를 단어들 위에 표시 */
+  }
